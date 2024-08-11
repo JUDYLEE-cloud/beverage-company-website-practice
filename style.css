@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+
+/* 기본색 */
+:root {
+    --main-color: #5D9AB2;
+    --accent-color: #BF6A7A;
+    --dark-color: #2B5566;
+    --text-bright-color: #fff;
+}
+
+body {
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    margin: 0;
+}
+
+.conA {
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(./img/fruit-conA.jpg);
+    /* linear-grandient(1, 2)는 1->2까지 그라데이션 레이어를 씌우는 것. 쉼표로 이미지를 추가하여 레이어를 쌓을 수 있다 */
+    background-position: center;
+    background-size: cover;
+    height: 100vh; /*1vh는 화면의 높이의 1/100 */
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-bright-color);
+}
+.conA h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 15vw; /* 1vw는 화면 너비의 1/100, 1vw=3.2px */
+    letter-spacing: 1rem; /* 1rem=폰트 크기 */
+    margin-left: 1rem;
+}
+.conA p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 8vw;
+}
+@media (min-width: 768px) {
+    .conA h1 {
+        font-size: 115px;
+    }
+    .conA p {
+        font-size: 24px;
+    }
+}
